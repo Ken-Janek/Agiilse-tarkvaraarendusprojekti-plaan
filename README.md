@@ -22,7 +22,9 @@ Lihtne ülesannete halduri veebirakendus, mis on loodud agiilse arendusprojekti 
 
 ## GitHub Pages
 
-Kui repo on GitHubis, siis lülita Pages sisse `Settings` -> `Pages` alt.
+Live link: [https://ken-janek.github.io/Agiilse-tarkvaraarendusprojekti-plaan/](https://ken-janek.github.io/Agiilse-tarkvaraarendusprojekti-plaan/)
+
+Kui Pages veel ei tööta, lülita see sisse `Settings` -> `Pages` alt.
 Vali `Deploy from a branch`, haruks `main` ja kaustaks `/(root)`.
 
 ## Märkus
