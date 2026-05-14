@@ -8,6 +8,10 @@ Lihtne ülesannete halduri veebirakendus, mis on loodud agiilse arendusprojekti 
 - otsib ülesandeid pealkirja või sõnumi järgi
 - salvestab andmed brauseri `localStorage`-i
 
+## GitHub Pages
+
+Live link: [https://ken-janek.github.io/Agiilse-tarkvaraarendusprojekti-plaan/](https://ken-janek.github.io/Agiilse-tarkvaraarendusprojekti-plaan/)
+
 ## Failid
 
 - [index.html](index.html) - rakenduse struktuur
@@ -19,13 +23,6 @@ Lihtne ülesannete halduri veebirakendus, mis on loodud agiilse arendusprojekti 
 
 1. Ava [index.html](index.html) brauseris.
 2. Lisa ülesandeid ja kasuta filtreid või otsingut.
-
-## GitHub Pages
-
-Live link: [https://ken-janek.github.io/Agiilse-tarkvaraarendusprojekti-plaan/](https://ken-janek.github.io/Agiilse-tarkvaraarendusprojekti-plaan/)
-
-Kui Pages veel ei tööta, lülita see sisse `Settings` -> `Pages` alt.
-Vali `Deploy from a branch`, haruks `main` ja kaustaks `/(root)`.
 
 ## Märkus
 
