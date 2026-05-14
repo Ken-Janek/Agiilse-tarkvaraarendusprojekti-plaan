@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FluxBoard | Ulesannete haldur</title>
+  <meta name="description" content="Lihtne agiilne ulesannete haldur klassi- voi tiimiprojekti jaoks.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Agiilne projekt</p>
+        <h1>FluxBoard</h1>
+        <p class="lead">Loo, jargi ja lopeta ulesandeid selges, lihtsas ja kiiresti kasutatavas vaates.</p>
+      </div>
+      <div class="hero-panel">
+        <div class="metric">
+          <span id="totalCount">0</span>
+          <label>Kokku</label>
+        </div>
+        <div class="metric">
+          <span id="activeCount">0</span>
+          <label>Tegemisel</label>
+        </div>
+        <div class="metric">
+          <span id="doneCount">0</span>
+          <label>Tehtud</label>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-grid">
+      <section class="panel composer">
+        <div class="panel-head">
+          <h2>Lisa ulesanne</h2>
+          <p>Tee backlogist kiiresti toimiv tööloend.</p>
+        </div>
+
+        <form id="taskForm" class="task-form">
+          <label>
+            Pealkiri
+            <input id="titleInput" type="text" placeholder="Nt planeeri sprint" maxlength="80" required>
+          </label>
+
+          <label>
+            Sonum
+            <input id="notesInput" type="text" placeholder="Valikuline selgitus">
+          </label>
+
+          <div class="form-row">
+            <label>
+              Tahtaeg
+              <input id="dueInput" type="date">
+            </label>
+
+            <label>
+              Prioriteet
+              <select id="priorityInput">
+                <option value="madal">Madal</option>
+                <option value="keskmine" selected>Keskmine</option>
+                <option value="korge">Korge</option>
+              </select>
+            </label>
+          </div>
+
+          <button type="submit" class="primary-btn">Lisa ulesanne</button>
+        </form>
+      </section>
+
+      <section class="panel board">
+        <div class="panel-head board-head">
+          <div>
+            <h2>Ulesanded</h2>
+            <p>Kuvatakse vastavalt filtrile ja otsingule.</p>
+          </div>
+
+          <div class="controls">
+            <button class="chip is-active" data-filter="all" type="button">Koik</button>
+            <button class="chip" data-filter="active" type="button">Tegemisel</button>
+            <button class="chip" data-filter="done" type="button">Tehtud</button>
+          </div>
+        </div>
+
+        <label class="search-box">
+          <span>Otsi</span>
+          <input id="searchInput" type="search" placeholder="Pealkiri voi sonum">
+        </label>
+
+        <div id="taskList" class="task-list" aria-live="polite"></div>
+      </section>
+    </main>
+  </div>
+
+  <template id="taskTemplate">
+    <article class="task-card">
+      <div class="task-main">
+        <div class="task-topline">
+          <h3></h3>
+          <span class="badge"></span>
+        </div>
+        <p class="task-notes"></p>
+        <div class="task-meta"></div>
+      </div>
+      <div class="task-actions">
+        <button type="button" class="ghost-btn toggle-btn"></button>
+        <button type="button" class="ghost-btn delete-btn">Kustuta</button>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

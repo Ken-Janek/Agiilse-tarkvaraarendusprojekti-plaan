@@ -159,3 +159,8 @@ See kood kirjeldab ühte ülesannet. Ülesandel on pealkiri, vajadusel tähtaeg 
 ## 9. Kokkuvõte
 
 Ülesannete haldur on lihtne, kuid hea näide agiilsest projektist. Selle puhul saab kasutada backlog'i, kasutajalugusid, sprint'e ja tagasisidet, et arendada tarkvara samm-sammult. Scrum sobib sellele projektile hästi, sest see toetab selget planeerimist, regulaarset ülevaatust ja valmis töö järkjärgulist loomist.
+
+## 10. Tegelik projekt
+
+Selle plaani põhjal on loodud ka lihtne ülesannete halduri veebirakendus samas kaustas. Rakendus võimaldab ülesandeid lisada, märkida tehtuks, filtreerida ja salvestada brauseri mällu.
+
