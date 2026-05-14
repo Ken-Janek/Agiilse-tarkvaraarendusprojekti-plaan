@@ -1,5 +1,3 @@
-# FluxBoard
-
 Lihtne ülesannete halduri veebirakendus, mis on loodud agiilse arendusprojekti näidiseks.
 
 ## Mida see teeb
